@@ -1,25 +1,15 @@
 import React from 'react';
-import {Text,View,Image,ScrollView,TextInput} from 'react-native';
+import {Text,View,TextInput,Button} from 'react-native';
 
-const MyApp = () =>
+export default function App()
 {
-  return(
-    <ScrollView style={{padding:10}}>
-      <View style={{flex:1,justifyContent:"flex-start",alignContent: "flex-start",paddingVertical:40}}>
-      <Text>Hi!</Text>
+  return (
+    <View style = {{padding :30}}>
+      <View>
+        <TextInput placeholder = "Enter your next goal"/>
+        <Button title="ADD"/>
       </View>
-      <View style={{flex:1,justifyContent:"center",alignContent:"center"}}>
-        <Text> What is your name?</Text>
-        <Image source={{uri:'https://reactnative.dev/docs/assets/p_cat2.png',
-          }}
-          style={{ width: 200, height: 200 }}
-        />
-        </View>
-        <TextInput
-        style = {{height:40, borderColor: "gray",borderWidth:1}}
-        defaultValue = "You can type in me"/>
-    </ScrollView>
+    </View>
+
   );
 }
-
-export default MyApp;
