@@ -1,14 +1,23 @@
 import React from 'react';
-import {Text,View,TextInput,Button} from 'react-native';
+import {Text,View} from 'react-native';
 
 export default function App()
 {
   return (
-    <View style = {{padding :50}}>
-      <View style = {{flexDirection:"row",justifyContent:"space-between",alignContent:"center"}}>
-        <TextInput placeholder = "Enter your next goal"
-        style = {{width: '70%',borderColor : 'black',borderWidth:2,paddingBottom:5}}/>
-        <Button title="ADD" style={{width:'30%'}}/>
+    <View style = {{padding :10}}>
+      <View
+        style = {{backgroundColor:'red',width:100,height:100,justifyContent:"center",alignItems:"center"}}>
+        <Text>1</Text>
+      </View>
+
+      <View
+        style = {{backgroundColor:'blue',width:100,height:100,justifyContent:"center",alignItems:"center"}}>
+        <Text>2</Text>
+      </View>
+
+      <View
+        style = {{backgroundColor:'green',width:100,height:100,justifyContent:"center",alignItems:"center"}}>
+        <Text>3</Text>
       </View>
     </View>
 
